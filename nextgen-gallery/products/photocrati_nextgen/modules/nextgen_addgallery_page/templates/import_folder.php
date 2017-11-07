@@ -9,9 +9,9 @@
 </p>
 <p>
     <input type="checkbox" id="import_keep_location" name="keep_location" value="on" /> <label for="import_keep_location"> <?php esc_html_e('Keep images in original location.', 'nggallery'); ?> <span style="font-size: 85%"><?php esc_html_e('Caution: If you keep images in the original folder and later delete the gallery, the images in that folder might be deleted depending on your settings.', 'nggallery'); ?></span></label><br/><br/>
-+	<!-- added by zMinion - BEGIN -->
-+    <input type="checkbox" id="scan_sub_folders" name="sub_folders_location" value="on" /> <label for="scan_sub_folders"> <?php esc_html_e('Scan sub-folders and create individual galleries from them.', 'nggallery'); ?> </label><br/><br/>
-+	<!-- added by zMinion - END -->	
+	<!-- added by zMinion - BEGIN -->
+    <input type="checkbox" id="scan_sub_folders" name="sub_folders_location" value="on" /> <label for="scan_sub_folders"> <?php esc_html_e('Scan sub-folders and create individual galleries from them.', 'nggallery'); ?> </label><br/><br/>
+	<!-- added by zMinion - END -->	
     <input type="button" id="import_button" name="import_folder" value="<?php _e('Import Folder', 'nggallery'); ?>" class="button-primary"/>
 </p>
 <script type="text/javascript">
