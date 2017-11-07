@@ -3305,6 +3305,10 @@ class Mixin_NggLegacy_GalleryStorage_Driver extends Mixin
             $request_uri = implode('/', $request_uri);
             $retval = $router->remove_url_segment('/index.php', $router->get_url($request_uri, FALSE, 'gallery'));
         }
+		
+		if ( $retval != NULL && in_array($size, array( 'full', 'original', 'image' ) ) )//added by zMinion
+			$retval = str_replace('/wp-content/plugins/s2member-files/photogalleries/', '/wp-content/plugins/s2member-files/s2member-file-storage-local/photogalleries/', $retval); //added by Szilard
+		
         return apply_filters('ngg_get_image_url', $retval, $image, $size);
     }
     /**
